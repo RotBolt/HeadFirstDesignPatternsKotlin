@@ -1,0 +1,13 @@
+### Design Principled Collected
+
+1. Identify the aspects of your application that vary and separate them from what stays the same
+   alter: take the parts that vary and encapsulate them, so that later on you can alter or extend the parts vary without
+          affecting those don't.
+
+2. Program to an interface, not an implementation
+   The point is to exploit polymorphism by programming to a supertype so that the actual runtime object isn’t locked
+   into the code.
+
+**Benefit of above two principles**
+- (From the duck app) We can add new behaviors without modifying any of our existing behavior classes or touching any of
+  the Duck classes that use flying behaviors.

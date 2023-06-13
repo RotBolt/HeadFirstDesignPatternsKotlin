@@ -1,0 +1,5 @@
+Q: Lots of things can drive change. List some reasons you’ve had to change code in your applications (we put in a couple of our own to get you started). Check your answers with the solution at the end of the chapter before you go on.
+
+- My company decided to do switch the vendor
+- Code style was to old and some of the libraries were deprecated
+- Some new functionality is required
