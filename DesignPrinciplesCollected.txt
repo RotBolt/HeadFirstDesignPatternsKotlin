@@ -5,9 +5,17 @@
           affecting those don't.
 
 2. Program to an interface, not an implementation
-   The point is to exploit polymorphism by programming to a supertype so that the actual runtime object isn’t locked
-   into the code.
+   - The point is to exploit polymorphism by programming to a supertype so that the actual runtime object isn’t locked
+     into the code.
 
 **Benefit of above two principles**
 - (From the duck app) We can add new behaviors without modifying any of our existing behavior classes or touching any of
   the Duck classes that use flying behaviors.
+
+  3. Favor composition over inheritance.
+     - It lets you encapsulate a family of algorithms into their own set of classes.
+     - It also lets you change behavior at runtime as long as object you are composing with implements correct behaviour
+       interface
+     - Self learning: A class can compose a behavior out of interfaces as well and delegate to behavior
+       specific class instead of handling the behaviour itself.
+       example: duck class delegates its behavior to Quack and Fly Behavior interface and its concrete class

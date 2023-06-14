@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/introduction" />
+            <option value="$PROJECT_DIR$/observerpattern" />
           </set>
         </option>
       </GradleProjectSettings>

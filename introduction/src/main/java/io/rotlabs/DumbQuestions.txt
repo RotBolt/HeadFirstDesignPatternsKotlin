@@ -1,0 +1,6 @@
+1.If design patterns are so great, why can't someone build a library of them so I don't have to?
+  A. Design patterns ate higher level than libraries. They tell us on how to structure our classes to
+  solve a certain problem. It is our job to adapt those designs to fit our particular application.
+
+2. Aren't libraries and frameworks also design patterns?
+   A. They arr not design patterns. They provide specific implementations that we link into our code.

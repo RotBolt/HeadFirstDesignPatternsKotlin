@@ -1,0 +1,6 @@
+1. Strategy Pattern
+   The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+   Strategy lets the algorithm vary independently of clients that use it.
+   For example: In Duck Simulator example, `FlyBehavior` and `QuackBehavior` represents family of algorithms.
+   and these behaviors or algorithms can vary independently of clients. At the same time clients can use them
+   interchangeably.
