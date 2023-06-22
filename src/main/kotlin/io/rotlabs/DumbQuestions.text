@@ -1,0 +1,17 @@
+1. What does this have to do with one-to-many relationships?
+
+   With the ObserverPattern, the Subject is the object that contains the state and
+   controls it. So, there is ONE subject with state. The observers, on the other hand, use the state,
+   even if they don’t own it. There are many observers, and they rely on the Subject to tell them when its state changes.
+   So there is a relationship between the ONE Subject to the MANY Observers.
+
+ 2. How does dependence come into this?
+
+    Because the subject is the sole owner of that data, the observers are dependent on the subject to update
+    them when the data changes. This leads to a cleaner OO design than allowing many objects to control the same data.
+
+ 3. I’ve also heard of a Publish- Subscribe Pattern. Is that just another name for the Observer Pattern?
+
+    No, although they are related. The Publish-Subscribe pattern is a more complex pattern that allows subscribers to
+    express interest in different types of messages and further separates publishers from subscribers.
+    It is often used in middleware systems.

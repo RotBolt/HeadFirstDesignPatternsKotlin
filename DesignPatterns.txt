@@ -4,3 +4,7 @@
    For example: In Duck Simulator example, `FlyBehavior` and `QuackBehavior` represents family of algorithms.
    and these behaviors or algorithms can vary independently of clients. At the same time clients can use them
    interchangeably.
+
+ 2. Observer Pattern
+    The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state,
+    all of its dependents are notified and updated automatically.

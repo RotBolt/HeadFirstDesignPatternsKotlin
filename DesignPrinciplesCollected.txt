@@ -1,4 +1,4 @@
-### Design Principled Collected
+### Design Principles Collected
 
 1. Identify the aspects of your application that vary and separate them from what stays the same
    alter: take the parts that vary and encapsulate them, so that later on you can alter or extend the parts vary without
@@ -12,10 +12,17 @@
 - (From the duck app) We can add new behaviors without modifying any of our existing behavior classes or touching any of
   the Duck classes that use flying behaviors.
 
-  3. Favor composition over inheritance.
-     - It lets you encapsulate a family of algorithms into their own set of classes.
-     - It also lets you change behavior at runtime as long as object you are composing with implements correct behaviour
-       interface
-     - Self learning: A class can compose a behavior out of interfaces as well and delegate to behavior
-       specific class instead of handling the behaviour itself.
-       example: duck class delegates its behavior to Quack and Fly Behavior interface and its concrete class
+3. Favor composition over inheritance.
+ - It lets you encapsulate a family of algorithms into their own set of classes.
+ - It also lets you change behavior at runtime as long as object you are composing with implements correct behaviour
+   interface
+ - Self learning: A class can compose a behavior out of interfaces as well and delegate to behavior
+   specific class instead of handling the behaviour itself.
+   example: duck class delegates its behavior to Quack and Fly Behavior interface and its concrete class
+
+ 4. Strive for loosely coupled designs between objects that interact.
+    - Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the
+      interdependency between objects.
+    - Self notes: In observer pattern, subject does not always have to emit all the state. We can implement an observable
+      which holds subject reference when it registers it self and get the required data from public getters from the
+      subject when whenever Subject notifies the observers
